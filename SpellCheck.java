@@ -10,7 +10,6 @@
  **************************************************************************** */
 
 import edu.princeton.cs.algs4.In;
-import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.TST;
 
 public class SpellCheck {
@@ -29,14 +28,23 @@ public class SpellCheck {
 
         while (myIn.hasNextLine()) {
             String myString = myIn.readLine();
-            StdOut.println(myString);
-            if (myString == "") {
-                StdOut.println("Invalid Input");
-            }
             myTST.put(myString, tick);
             tick++;
+        }
+
+        In myFileIn = new In(args[1]);
+
+        while (myFileIn.hasNextChar()) {
+            while ()
+            char myChar = myFileIn.readChar();
+            if (myFileIn.readChar()) {
+
+            }
+
 
         }
+
+
 
 
 
