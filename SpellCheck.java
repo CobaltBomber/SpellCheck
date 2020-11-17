@@ -34,12 +34,24 @@ public class SpellCheck {
 
         In myFileIn = new In(args[1]);
 
+        StringBuilder word = new StringBuilder();
+        StringBuilder newWord = new StringBuilder();
+
         while (myFileIn.hasNextChar()) {
-            while ()
             char myChar = myFileIn.readChar();
-            if (myFileIn.readChar()) {
+            if (Character.isLetter(myChar)) {
+                word.append(myChar);
+            }
+            else {
+                newWord.setCharAt(0, '.');
+                for (int i = 0; ) {
+                    myTST.keysThatMatch(newWord);
+                }
+
+                //StdOut.println(word);
 
             }
+
 
 
         }
